@@ -28,26 +28,36 @@ img:nth-child(4) {
 
 @media only screen and (min-width: 25em) {
 
+  img {
+    max-width: 49%;
+  }
+
   img:nth-child(2),
   img:last-child {
     display: inline-block;
   }
 
-  img {
-    max-width: 49%;
-  }
 }
 
 @media only screen and (min-width: 38em) {
 
   img {
+    display: inline-block;
     max-width: 32%;
   }
 
+  img:first-child {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 60em) {
 
+  img {
+    max-width: 24%;
+  }
 
-
+  img:first-child {
+    display: inline-block;
+  }
 }
